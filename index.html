@@ -4,13 +4,13 @@ title: Weber前端开发Blog
 ---
 
 
-<div class="main_1024">
+
 <ul class="list">
 {% for post in site.posts %}
 <li ><a href="{{ site.baseurl }}{{ post.url }}"  target="_blank" >{{ post.title }}</a>  发布于：{{ post.date | date_to_string  }} </li>
 {% endfor %}
 </ul>
-</div>
+
 
 
 
