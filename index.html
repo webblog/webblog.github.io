@@ -1,85 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>小官个人博客</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=0" name="viewport">
-    <meta content="yes" name="apple-mobile-web-app-capable">
-    <meta content="black" name="apple-mobile-web-app-status-bar-style">
-    <meta content="telephone=no" name="format-detection">
-    <style>
-    html,body{
-	background:#f4f4f4;
-	font:14px/1.231 Microsoft YaHei,Helvetica,Arial,sans-serif;
-}
-ul,li{ list-style: none; padding:0;}
-header{
-	min-height: 50px;
-	box-shadow: 0 1px 1px 1px #e4e4e4;
-	position: relative;
-}
+---
+layout: default
+title: Weber前端开发Blog
+---
 
-input{
-	-moz-border-radius:0px;
-	-webkit-border-radius:0px;
-	border-radius:0px;
-}
-textarea,button{
-	-moz-border-radius:0px;
-	-webkit-border-radius:0px;
-	border-radius:0px;
-	outline:none;
-	appearance:none;
-	-webkit-appearance:none;
-	-moz-appearance:none;
-	border:none;
-}
-a,img{
-	-webkit-touch-callout:none;
-	-moz-touch-callout:none;
-}
 
-em,i,b{
-	font-style:normal;
-}
+<div class="main_1024">
+<ul class="list">
+{% for post in site.posts %}
+<li ><a href="{{ site.baseurl }}{{ post.url }}"  target="_blank" >{{ post.title }}</a>  发布于：{{ post.date | date_to_string  }} </li>
+{% endfor %}
+</ul>
+</div>
 
-.clear:after{
-	content:"";
-	display:table;
-	clear:both;
-	font-size:1px;
-	line-height:0;
-	height:0;
-}
 
-header{ text-align: center; padding-top: 10px; line-height: 18px; color:#f00;}
-li{ line-height: 22px; }
-    /*pc端*/
-	@media screen and (min-width: 992px){
-		.main{ width: 1200px; margin:20px auto; }
-		.lt{ float: left; }
-		.lt img{ border-radius: 20px; }
-		.rt{ float: left; padding:160px 50px 50px;}
-	}
-	@media screen and (max-width: 992px){
-		img{ width: 100%; }
-	}
-    </style>
-</head>
-<body>
-	<header>前端技术交流博客<br/>工程师们正在努力开发中...</header>
-    <div class="main">
-    	<div class="lt"><img src="images/1.jpg" alt=""></div>
-    	<div class="rt">
-    		<ul>
-    			<li>姓名：官永贵</li>
-    			<li>年龄：90后</li>
-    			<li>职业：前端开发工程师</li>
-    			<li>简介：2012年正式初入前端开发领域，对html/css3/javascript有较深的了解！</li>
-    		</ul>
-    	</div>
-    </div>
 
-</body>
-</html>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"5","bdPos":"left","bdTop":"139.5"},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
