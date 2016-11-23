@@ -1,0 +1,38 @@
+body{ font-family:"宋体","Arial";font-size:14px;   color:#000000; margin:0 auto; background:#fafafa;}
+ul,li,dl,dt,dd,p{ list-style:none; }
+a{ text-decoration:none; color:#017CB9;}
+a:hover{  text-decoration:underline;}
+img{ border:0;}
+em,i{ font-style:normal;}
+label{vertical-align:middle;}
+
+header{ height:40px; line-height:40px; background:#2C2C2C; position:fixed; top:0; width:100%; font-family: 微软雅黑;}
+header a{ color:#ccc; font-size:14px; padding:0 20px;}
+nav{max-width:1024px; margin:0 auto;}
+
+.main_1024{max-width:1024px; margin:50px auto 0 auto;}
+
+.clear:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clear{zoom:1}
+
+.list{ min-height:600px; }
+.list li{ line-height:25px;}
+
+.tit{ line-height:30px; padding:15px 0; margin-bottom:30px; border-bottom:1px solid #ddd;} 
+.tit span{ font-size:36px; color:#017CB9; }
+.text{ margin-bottom:50px; line-height:23px;}
+
+.links{padding-bottom:50px; max-width:1024px; margin:0 auto;}
+.link-list li{ float:left; padding:5px 10px;}
+
+
+
+.about{ margin-bottom:25px;}
+.about .txt{ line-height:25px;}
+
+
+.Copyright a{display:none !important;}
+
+.top{position: fixed; bottom: 72px; right:-60px; z-index: 999;  height:55px; width: 55px; border: 1px solid #d9d9d9; border-radius: 8px; background: #323d45;line-height: 55px;font-family: Arial;font-weight: bold;font-size: 24px;text-align: center;cursor: pointer;color:#fff;}
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="HTML5,CSS3,前端开发,WEB前端开发博客,交互设计,移动web开发" />
+<meta name="description" content="打造web前端开发技术交流博客 "/>
+<title>{{ page.title }}-Weber前端开发Blog</title>
+<link rel="stylesheet" href="../../../style.css">
+<script type="text/javascript" src="../../../jquery.js"></script>
+</head>
+<body>
+
+<header>
+    <nav><a href="/jekyll_demo/">前端开发</a><a href="#">交互体验</a><a href="/jekyll_demo/about.html">关于我</a></nav>
+</header>
+
+<div class="main_1024">
+{{ content }}
+</div>
+
+
+
+
+
+ <script type="text/javascript">
+   $(function(){
+    $(window,document).bind('scroll',function(){
+	   if($(this).scrollTop() > 120){
+	       $('.top').stop().animate({right:"72px"});
+	   }else{
+	       $('.top').stop().animate({right:"-60px"});
+	   }
+	});
+	
+	$(".top").bind("click",function(){
+			$("html,body").animate({"scrollTop":0});
+		});
+	
+  })
+ 
+ </script>
+ 
+ <div class="top">top</div>
+
+<div style="display:none;">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc49105cc5ab3ee8ef37f82773a06241d' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div>
+</body>
+</html>
