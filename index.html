@@ -7,7 +7,9 @@ title: Weber前端开发Blog
 
 <ul class="list">
 {% for post in site.posts %}
-<li ><a href="{{ site.baseurl }}{{ post.url }}"  target="_blank" >{{ post.title }}</a>  发布于：{{ post.date | date_to_string  }} </li>
+<li ><a href="{{ site.baseurl }}{{ post.url }}"  target="_blank" >{{ post.title }}</a>  发布于：{{ post.date | date_to_string  }} 
+<div>{{ post.excerpt }}</div>
+</li>
 {% endfor %}
 </ul>
 
